@@ -2,7 +2,7 @@
 <html lang="zxx">
 
 <head>
-    <title>Hotel Book : Holiday Hours India's NO.1 Travel Site.</title>
+    <title>: Holiday Hours India's NO.1 Travel Site.</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8" />
     <meta name="keywords" content="Traventure Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -19,6 +19,7 @@
     <!-- Custom Theme files -->
     <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
     <link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+    <link href="css/dtour.css" type="text/css" rel="stylesheet">
     <!-- font-awesome icons -->
     <link href="css/fontawesome-all.min.css" rel="stylesheet">
     <!-- //Custom Theme files -->
@@ -26,8 +27,10 @@
     <link href="//fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
     <!-- //online-fonts -->
     
+    
+    <!---------------style--->
     <style>
-input[type="email"],input[type="password"],input[type="text"],input[type="datetime-local"]
+input[type="email"],input[type="password"],input[type="text"]
 {
     text-align: left;
     margin: 10px;
@@ -35,7 +38,7 @@ input[type="email"],input[type="password"],input[type="text"],input[type="dateti
     font-size:1em;
     color:black;
     padding: 10px 20px;
-    width: 100%;
+    width: 95%;
     border: 2px solid #17a2b8;
     font-family: 'Rationale', sans-serif;
     background: rgba(0, 0, 0, 0);
@@ -44,24 +47,7 @@ input[type="email"],input[type="password"],input[type="text"],input[type="dateti
     box-shadow:none;
 
 }
-.option
-{
-   text-align: left;
-    margin: 10px;
-    outline: none;
-    font-size:1em;
-    color:black;
-    padding: 10px 20px;
-    width: 100%;
-    border: 2px solid #17a2b8;
-    font-family: 'Rationale', sans-serif;
-    background: rgba(0, 0, 0, 0);
-    transition: 0.25s;
-    outline-style:none;
-    box-shadow:none; 
-    background-color: white;
-}
-input[type="submit"]
+input[type="submit"],input[type="button"]
 {
     background: rgba(0, 0, 0, 0);
     color: black;
@@ -71,22 +57,9 @@ input[type="submit"]
     transition: 0.25s;
    
 }
-.bookingdiv
-{
-    
-}
-.headingdiv
-{
-    color: #df2d51;
-   letter-spacing: 5px;
-    text-align: center;
-    font-family: sans-serif;
-    font-weight: bolder;
-}
         
     </style>
-    
-    
+    <!---------------end style----------->
     
     
 </head>
@@ -95,7 +68,7 @@ input[type="submit"]
     <!-- inner-banner -->
     <div class="inner-banner" id="home">
          <!-- header -->
-<header>
+         <header>
                 <nav class="navbar navbar-expand-lg navbar-light bg-gradient-secondary pt-3">
 
                     <h1>
@@ -117,7 +90,10 @@ input[type="submit"]
                                 </a>
                             </li>
                             <li class="nav-item  mr-3">
-                                <a class="nav-link" href="domastic_tour.html">Special Offers</a>
+                                <a class="nav-link active" href="international_tour.html">Tours</a>
+                            </li>
+                            <li class="nav-item  mr-3">
+                                <a class="nav-link " href="special_offers.html">Special Offers</a>
                             </li>
                             <li class="nav-item  mr-3">
                                 <a class="nav-link" href="gallery.html">Gallery</a>
@@ -165,89 +141,80 @@ input[type="submit"]
                 <li class="breadcrumb-item">
                     <a href="index.html">Home</a>
                 </li>
-                <li class="breadcrumb-item active" aria-current="page">Book Hotel</li>
+                <li class="breadcrumb-item active" aria-current="page"><tag></tag></li>
             </ol>
-        </nav><br><br><br>
+        </nav>
         <!-- //breadcrumbs -->
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-1 col-md-2 col-sm-1">
+        
+         <!-- tours -->
+    
+    <main class="main-area">
+         <section class="cards">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-8">
+                        <div style="border-radius:20px; border-bottom: 2px solid #cd2029;border-right: 2px solid black;margin-top: 50px;border-top: 2px solid #3a589e; border-left: 2px solid #df2d51;" class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <article style="margin-top: 100px; border:none; border-radius: 0px 20px 0px 20px;" class="card">
+                                     <picture class="thumbnail">
+                                            <img style="margin-top:-90px;border-radius: 20px;" src="images/banner.jpg">
+                                        </picture>
+                                        <div class="card-content">
+                                            <h2 class="chead">
+                                                <i class="fa fa-tag"></i>
+                                                John dfkjghkcdnv kjhkfkjfh ugtuihgiue
+                                            </h2>
+                                            <h5 class="clocation">
+                                                <i class="fa fa-map-marker"></i>
+                                                Itally
+                                            </h5>
+                                            <h5 class="ctime">
+                                                <i class="fa fa-clock-o"></i> 
+                                                8 day 9 Nights
+                                            </h5>
+                                            <div class="dprice">
+                                                <h5 class="price">Price</h5>
+                                                <p class="sprice">
+                                                    <i class="fa fa-rupee">15000/Person</i>
+                                                </p>
+                                                <p class="nprice">
+                                                    <i class="fa fa-rupee"><s>16000/Person</s></i>
+                                                </p>
+                                            </div>
+                                            
+                                        </div>
+                                </article>
+                            </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <artical style="margin-top: 10px; border:none; border-radius: 0px 20px 20px 0px;" class="card">
+                                <form action="#" method="get">
+                                    <input type="text" placeholder="Title" name="title" readonly style="border:none;">
+                                    <input type="text" placeholder="Full Name" name="name">
+                                    <input type="email" placeholder="Email" name="email">
+                                    <input type="text" placeholder="Contact Number" name="number">
+                                    <input type="text" placeholder="No. of Persons" name="persons">
+                                    <input type="text" placeholder="Title" name="title">
+                                    <input type="submit" value="Book" class="btn btn-primary">
+                                    <input type="button" value="Details" class="btn btn-primary">
+                                </form>
+                            </artical><br>
+                        </div>
+                    </div>
+                    
                 </div>
-                <div class="bookingdiv col-lg-10 col-md-8 col-sm-12">
-                    <h3 class="headingdiv">BOOK HOTEL</h3>
-                    <h3 class="headingdiv">~~~~~~~~~~~</h3>
-                    <form action="#" method="get">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                 <input type="text" placeholder="Full Name*" name="name">
-                            </div>
-                            <div class="col-sm-6">
-                                 <input type="text" placeholder="City*" name="city">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <input type="text" name="number" placeholder="Mobile Number*">
-                            </div>
-                            <div class="col-sm-6">
-                                <input type="email" placeholder="Email*" name="email">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <select class="option" id="category" name="category" required="">
-									<option class="Setected" value="none">Room Type*</option>
-									<option value="Single Room">Single Room</option>
-									<option value="Double Room">Double Room</option>
-									<option value="Suit Room">Suit Room</option>
-								</select>
-                            </div>
-                            <div class="col-sm-6">
-                                <select class="option" id="category1" name="category1" required="">
-                                    <option value="01">Select Number of Guests*</option>
-									<option value="01">01</option>
-									<option value="02">02</option>
-									<option value="03">03</option>
-									<option value="04">04</option>
-									<option value="05">05</option>
-									<option value="06">06</option>
-                                    <option value="07">07</option>
-                                    <option value="08">08</option>
-                                    <option value="09">09</option>
-                                    <option value="10">10</option>
-                                    <option value="10+">Above 10</option>
-                                </select>
-                            </div>
-                        </div>
-                        
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <label style="margin-left: 15px;">Check Out Date & Time</label>
-                                <input type="datetime-local" id="checkin" name="Text"  required="">
-                            </div>
-                            <div class="col-sm-6">
-                                <label style="margin-left: 15px;">Check Out Date & Time</label>
-                                <input type="datetime-local" placeholder="Check Out & Time*">
-                            </div>
-                        </div>
-                        
-                        <br>
-                        <input type="submit" value="Book" class="btn btn-info submit">
-                    </form>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-1">
-                </div>
+                
             </div>
         </div>
-    <br><br><br>
-        <!-- //slide -->
+             </section>
+    </main>
+        <!-- //tours -->
         <!-- footer -->
-        <footer class="py-sm-5">
+        <footer style="margin-top: 80px;" class="py-sm-5">
             <div class="container">
                 <div class="row py-5">
                     <!-- footer grid1 -->
                     <div class="col-lg-4 text-center">
-                       <h2 style="margin-top:30px;">
+                        <h2 style="margin-top:30px;">
                         <a class="text-white" href="index.html">
                             Holiday Hours
                             <span style="margin-top:30px;">Travel Any Time</span>
@@ -260,6 +227,8 @@ input[type="submit"]
                     <!-- footer grid2 -->
                     <div class="col-lg-4  footv3-left text-center my-lg-0 my-5">
                         <h3 class="mb-3">Get In Touch</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting.</p>
+    
                         <div class="fv3-contact mt-3">
                             <address>
                                 <span class="fas fa-home mr-2"></span>
@@ -282,34 +251,33 @@ input[type="submit"]
                     <div class="col-lg-4  footv3-left text-center">
                         <h3 class="mb-3">Navigation</h3>
                         <ul class="list-agileits">
-                        <li>
-                            <a href="index.html">
-                                Home
-                            </a>
-                        </li>
-                        <li class="my-3">
-                            <a href="tour.html">
-                                Tours
-                            </a>
-                        </li>
-                       <li class="mb-3">
+                            <li>
+                                <a href="index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="my-3">
+                                <a href="about.html">
+                                    About Us
+                                </a>
+                            </li>
+                            <li class="mb-3">
                             <a href="gallery.html">
                                 Gallery
                             </a>
                         </li>
-                        <li>
-                            <a href="about.html">
-                                About Us
-                            </a>
-                        </li>
-                        
-                    </ul>
+                            <li>
+                                <a href="contact.html">
+                                    Contact Us
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                     <!-- //footer grid3 -->
                 </div>
                 <!-- //footer row -->
                 <div class="cpy-right text-center pb-sm-0 pb-5">
-                   <p style="margin-top: -30px; margin-bottom: -30px;">© 2019 Holiday Hours. All rights reserved | Design & Maintaine by
+                    <p style="margin-top: -30px; margin-bottom: -30px;">© 2019 Holiday Hours. All rights reserved | Design & Maintaine by
                     <a href="#"> Mandeep Kumar.</a>
                 </p>
                 </div>
@@ -317,7 +285,7 @@ input[type="submit"]
             <!-- //footer container -->
         </footer>
         <!-- //footer -->
-       
+        
         <!-- js -->
         <script src="js/jquery-2.2.3.min.js"></script>
         <!-- //js -->
