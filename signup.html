@@ -19,6 +19,7 @@
     <!-- Custom Theme files -->
     <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
     <link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+    <script src="css/jquery-3.3.1.min.js"></script>
     <!-- font-awesome icons -->
     <link href="css/fontawesome-all.min.css" rel="stylesheet">
     <!-- //Custom Theme files -->
@@ -73,11 +74,9 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
     font-size:1em;
     color:black;
     padding: 10px 20px;
-    width: 70%;
+    width: 80%;
     height: 40px;
-    border:none;
-    border-right:2px solid #007bff;
-    border-bottom: 2px solid #007bff;
+    border:2px solid #007bff;
     font-family: 'Rationale', sans-serif;
     background: rgba(0, 0, 0, 0);
 }
@@ -224,9 +223,9 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
                     </h2><br>
                      <form action="" method="get">
                            <div>
-                              
+                                <h5 id="fnamecheck">  </h5>
                                 <input class="form-control bottom" type="text" id="fname"  autocomplete="off" placeholder="First Name">
-                                <h5 id="fnamecheck">  </h5><br>
+                                <br>
                             </div>
                             <div>
                                 <h5 id="lnamecheck">  </h5>
@@ -249,7 +248,7 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
                                 <input type="text" class="form-control" id="number" autocomplete="off"  placeholder="Contact Number"><br>
                             </div> 
                          <div>
-                             <h6 class="cos"> Agree Tearms & Conditions. <a href="signin.html"> READ </a>Here</h6><br>
+                             <h6 class="cos"> Agree Terms & Conditions. <a href="signin.html"> READ </a>Here</h6><br>
                          </div>
                          <div class="row">
                              <div class="col-sm-4">
@@ -348,6 +347,105 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
         </footer>
         <script src="js/jquery-2.2.3.min.js"></script>
         <!-- //js -->
+    <!---------------------------form validation------->
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#fnamecheck').hide();
+            $('#lnamecheck').hide();
+            $('#emailcheck').hide();
+            $('#passcheck').hide();
+            $('#cpasscheck').hide();
+            $('#numbercheck').hide();
+            
+            var fname_err = true;
+            var lname_err = true;
+            var email_err = true;
+            var password_err = true;
+            var cpassword_err = true;
+            var number_err = true;
+            
+            $("#fname").keyup(function(){
+                fname_check();
+            });
+            function fname_check(){
+                var namepattern = /^[A-Za-z]+$/;
+                var fname_val = $("#fname").val();
+                
+                if(fname_val.length=='')
+                    {
+                        $('#fnamecheck').show();
+                        $('#fnamecheck').html("Please Fill First Name");
+                        $('#fnamecheck').focus();
+                        $('#fnamecheck').css("color","orange");
+                        $('#fname').css("border","2px solid orange");
+                        
+                        fname_err = false;
+                        return false;
+                    }
+                else
+                    {
+                        if(namepattern.test(fname_val))
+                            {
+                                $('#fnamecheck').hide();
+                                $('#fname').css("border","none");
+                                $('#fname').css("border-bottom","2px solid #007bff");
+                            }
+                        else
+                        {
+                            $('#fnamecheck').show();
+                            $('#fnamecheck').html("Number not Allowed");
+                            $('#fnamecheck').focus();
+                            $('#fnamecheck').css("color","#da3a3a");
+                            $('#fname').css("border","2px solid #da3a3a");
+                             
+                            lname_err = false;
+                            return false;  
+                        }
+                    }
+            }
+            $("#lname").keyup(function(){
+                fname_check();
+            });
+            function fname_check(){
+                var namepattern = /^[A-Za-z]+$/;
+                var lname_val = $("#lname").val();
+                
+                if(lname_val.length=='')
+                    {
+                        $('#lnamecheck').show();
+                        $('#lnamecheck').html("Please Fill Last Name");
+                        $('#lnamecheck').focus();
+                        $('#lnamecheck').css("color","orange");
+                        $('#lname').css("border","2px solid orange");
+                        
+                        lname_err = false;
+                        return false;
+                    }
+                else
+                    {
+                        if(namepattern.test(lname_val))
+                            {
+                                $('#lnamecheck').hide();
+                                $('#lname').css("border","none");
+                                $('#lname').css("border-bottom","2px solid #007bff");
+                            }
+                        else
+                        {
+                            $('#lnamecheck').show();
+                            $('#lnamecheck').html("Number not Allowed");
+                            $('#lnamecheck').focus();
+                            $('#lnamecheck').css("color","#da3a3a");
+                            $('#lname').css("border","2px solid #da3a3a");
+                             
+                            lname_err = false;
+                            return false;  
+                        }
+                    }
+            }
+            
+        });
+    </script>
+    <!---------------------------end form validation------->
         <!-- start-smooth-scrolling -->
         <script src="js/move-top.js"></script>
         <script src="js/easing.js"></script>

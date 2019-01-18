@@ -644,7 +644,7 @@ span.w3-line {
 }
 
 .w3-about {
-	background: url(../images/ab.png) no-repeat bottom;
+	background: url(../images/ab.jpg) no-repeat bottom;
 	background-size: cover;
 }
 
@@ -1284,7 +1284,7 @@ ul.portfolio-area li figure {
 /* error */
 
 .error_agileinfo {
-	background: url(../images/ab.png) no-repeat center;
+	background: url(../images/ab.jpg) no-repeat center;
 	background-size: cover;
 	min-height: 500px;
 }
@@ -1564,6 +1564,7 @@ ul.portfolio-area li figure {
 		font-size: 1.4rem;
 	}
 	.slide {
+        margin-bottom: 65px;
 		min-height: 265px;
 	}
 	.slide-right h5 {
